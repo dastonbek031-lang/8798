@@ -1,7 +1,8 @@
 import AppRouter from "./router/AppRouter"
+import { useEffect } from "react"
 
 function App() {
-  const telegram = window.Telegram.WebApp;
+  const tg = window.Telegram.WebApp;
 useEffect(() => {
   tg.ready()
   tg.expand()
